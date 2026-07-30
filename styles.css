@@ -1,19 +1,19 @@
 :root {
-  --bg: #f4eee8;
-  --bg-soft: #efe4da;
+  --bg: #061244;
+  --bg-soft: #102a83;
   --surface: #ffffff;
-  --surface-muted: #f8f2ec;
-  --text: #151515;
-  --muted: #5f5a55;
-  --accent: #111111;
-  --accent-strong: #000000;
-  --blue-deep: #111111;
-  --blue-river: #2a2a2a;
-  --blue-jeans: #d8c3af;
-  --ice: #efe4da;
-  --iron: #ebe4dc;
+  --surface-muted: rgba(255, 255, 255, 0.16);
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.78);
+  --accent: #ffffff;
+  --accent-strong: #ffffff;
+  --blue-deep: #0b32ad;
+  --blue-river: #7faccc;
+  --blue-jeans: #2474b8;
+  --ice: #d2d7dc;
+  --iron: rgba(255, 255, 255, 0.2);
   --white: #ffffff;
-  --shadow: 0 8px 0 rgba(21, 21, 21, 0.12);
+  --shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
 }
 
 * {
@@ -28,8 +28,8 @@ body {
     sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.86), transparent 28%),
-    linear-gradient(180deg, #fbf7f2 0%, var(--bg) 52%, #eadfd4 100%);
+    linear-gradient(180deg, rgba(4, 10, 24, 0.42) 0%, rgba(5, 20, 80, 0.74) 54%, rgba(6, 18, 68, 0.96) 100%),
+    url("assets/background.webp") center top / cover fixed;
 }
 
 button,
@@ -41,7 +41,7 @@ a {
   width: min(100%, 430px);
   min-height: 100vh;
   margin: 0 auto;
-  padding: 30px 18px 24px;
+  padding: 34px 18px 24px;
 }
 
 .profile {
@@ -56,11 +56,11 @@ a {
   margin: 0 auto 16px;
   place-items: center;
   overflow: hidden;
-  border: 3px solid var(--accent-strong);
+  border: 3px solid rgba(255, 255, 255, 0.86);
   border-radius: 50%;
-  background: var(--surface);
-  color: var(--accent);
-  box-shadow: 0 8px 0 rgba(21, 21, 21, 0.14);
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--white);
+  box-shadow: var(--shadow);
   font-size: 1.65rem;
   font-weight: 900;
 }
@@ -86,7 +86,7 @@ a {
 
 .eyebrow {
   margin: 0 0 8px;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.86rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -104,7 +104,7 @@ h1 {
 .bio {
   max-width: 330px;
   margin: 10px auto 16px;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.84);
   font-size: 1.02rem;
   font-weight: 700;
   line-height: 1.45;
@@ -121,10 +121,10 @@ h1 {
 .service-strip span {
   min-height: 34px;
   padding: 8px 13px;
-  border: 1.5px solid rgba(21, 21, 21, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
-  color: var(--text);
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--white);
   font-size: 0.9rem;
   font-weight: 800;
 }
@@ -152,12 +152,13 @@ h1 {
   min-height: 64px;
   gap: 12px;
   padding: 10px 16px 10px 12px;
-  border: 2px solid var(--accent-strong);
+  border: 1px solid rgba(255, 255, 255, 0.52);
   border-radius: 14px;
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.94);
+  color: #0b1630;
+  background: rgba(255, 255, 255, 0.9);
   text-decoration: none;
-  box-shadow: 0 6px 0 rgba(21, 21, 21, 0.13);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.24);
   transition:
     transform 160ms ease,
     border-color 160ms ease,
@@ -166,9 +167,9 @@ h1 {
 
 .link-card:hover,
 .link-card:focus-visible {
-  border-color: var(--accent-strong);
-  box-shadow: 0 3px 0 rgba(21, 21, 21, 0.2);
-  transform: translateY(3px);
+  border-color: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.28);
+  transform: translateY(-2px);
   outline: none;
 }
 
@@ -179,8 +180,8 @@ h1 {
   place-items: center;
   overflow: hidden;
   border-radius: 50%;
-  background: var(--surface-muted);
-  color: var(--accent);
+  background: rgba(11, 50, 173, 0.1);
+  color: var(--blue-deep);
   font-size: 0.78rem;
   font-weight: 900;
 }
@@ -223,7 +224,7 @@ h1 {
 .link-description {
   display: block;
   margin-top: 3px;
-  color: var(--muted);
+  color: #4b5670;
   font-size: 0.86rem;
   font-weight: 700;
   line-height: 1.35;
@@ -231,7 +232,7 @@ h1 {
 }
 
 .arrow {
-  color: var(--accent);
+  color: rgba(11, 22, 48, 0.46);
   font-size: 1.15rem;
   font-weight: 800;
 }
@@ -243,16 +244,18 @@ h1 {
   gap: 14px;
   margin-top: 18px;
   padding: 16px 18px;
-  border: 2px solid var(--accent-strong);
+  border: 1px solid rgba(255, 255, 255, 0.34);
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: 0 6px 0 rgba(21, 21, 21, 0.1);
+  color: var(--white);
+  background: rgba(3, 12, 42, 0.34);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
 }
 
 .info-label {
   display: block;
   margin-bottom: 4px;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.72);
   font-size: 0.78rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -267,24 +270,24 @@ h1 {
 .ghost-button {
   min-height: 42px;
   padding: 0 14px;
-  border: 2px solid var(--accent-strong);
+  border: 1px solid rgba(255, 255, 255, 0.42);
   border-radius: 12px;
-  color: var(--white);
-  background: var(--accent-strong);
+  color: #061244;
+  background: rgba(255, 255, 255, 0.92);
   cursor: pointer;
   font-weight: 800;
 }
 
 .ghost-button:hover,
 .ghost-button:focus-visible {
-  border-color: var(--accent);
-  background: var(--accent);
+  border-color: var(--white);
+  background: var(--white);
   outline: none;
 }
 
 footer {
   padding: 20px 0 0;
-  color: rgba(21, 21, 21, 0.58);
+  color: rgba(255, 255, 255, 0.62);
   font-size: 0.82rem;
   text-align: center;
 }
