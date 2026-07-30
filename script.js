@@ -43,11 +43,25 @@ const church = {
       url: "https://www.youtube.com/@ADFiSorocabaOficial",
     },
     {
+      title: "Fotos dos cultos",
+      description: "Acesse os registros no Drive",
+      icon: "drive",
+      image: "",
+      url: "https://drive.google.com/",
+    },
+    {
       title: "Instagram",
       description: "Acompanhe nossa programação",
       icon: "instagram",
       image: "",
       url: "https://www.instagram.com/adfisorocaba/",
+    },
+     {
+      title: "Facebook",
+      description: "Curta nossa pagina",
+      icon: "facebook",
+      image: "",
+      url: "https://www.facebook.com/adfisorocaba",
     },
   ],
 };
@@ -86,11 +100,24 @@ const icons = {
       <path d="m10 9.5 5 2.5-5 2.5v-5Z" />
     </svg>
   `,
+  drive: `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M9.2 4.5h5.6l6.2 10.8-2.8 4.2H5.8L3 15.3 9.2 4.5Z" />
+      <path d="M9.2 4.5 15.4 15.3" />
+      <path d="M14.8 4.5 8.6 15.3" />
+      <path d="M3 15.3h18" />
+    </svg>
+  `,
   instagram: `
     <svg viewBox="0 0 24 24" aria-hidden="true">
       <rect x="4" y="4" width="16" height="16" rx="5" />
       <circle cx="12" cy="12" r="3.3" />
       <path d="M17.3 7.2h.01" />
+    </svg>
+  `,
+  facebook: `
+    <svg class="facebook-icon" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M14.2 8.3h-1.3c-.8 0-1.2.5-1.2 1.3v1.5H14l-.4 2.5h-1.9V18H9.1v-4.4H7.4v-2.5h1.7V9.4c0-2.2 1.3-3.6 3.5-3.6.7 0 1.4.1 1.6.1v2.4Z" />
     </svg>
   `,
 };
