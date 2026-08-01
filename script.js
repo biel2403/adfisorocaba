@@ -1,8 +1,8 @@
 const church = {
   name: "ADFi Sorocaba",
   initials: "ADFi",
-  logo: "",
-  bio: "Uma família que te acolhe.",
+  logo: "assets/logo.svg",
+  bio: "Você é bem-vindo por aqui! \n Explore os links abaixo e conheça uma família que te acolhe.",
   address: "Avenida Doutor Ulysses Guimarães, 1160 - Parque das Laranjeiras.",
   services: ["Terça - 19:30h", "Quinta - 19:45h", "Domingo - 19:00h"],
   footer: "(c) 2026 ADFi Sorocaba. Todos os direitos reservados.",
@@ -15,8 +15,7 @@ const church = {
       url: "https://wa.me/5500000000000",
     },
     {
-      title: "Localização",
-      description: "Como chegar no templo",
+      title: "Como chegar no templo",
       icon: "map",
       image: "",
       url: "https://maps.app.goo.gl/SQrX3kKYsFhqWZq26",
@@ -154,11 +153,7 @@ function renderLinks() {
       (link) => `
         <a class="link-card" href="${link.url}" target="_blank" rel="noopener noreferrer">
           ${getLinkVisual(link)}
-          <span>
-            <span class="link-title">${link.title}</span>
-            <span class="link-description">${link.description}</span>
-          </span>
-          <span class="arrow" aria-hidden="true">&gt;</span>
+          <span class="link-title">${link.description || link.title}</span>
         </a>
       `,
     )
