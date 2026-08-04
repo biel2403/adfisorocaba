@@ -12,7 +12,7 @@ const church = {
       description: "Fale com nossa equipe",
       icon: "whatsapp",
       image: "",
-      url: "https://wa.me/5500000000000",
+      url: "https://wa.me/5515991037492",
     },
     {
       title: "Como chegar no templo",
