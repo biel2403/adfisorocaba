@@ -8,13 +8,6 @@ const church = {
   footer: "(c) 2026 ADFi Sorocaba. Todos os direitos reservados.",
   links: [
     {
-      title: "WhatsApp da igreja",
-      description: "Fale com nossa equipe",
-      icon: "whatsapp",
-      image: "",
-      url: "https://wa.me/5515991037492",
-    },
-    {
       title: "Como chegar no templo",
       icon: "map",
       image: "",
@@ -35,18 +28,25 @@ const church = {
       url: "https://seulinkdepagamento.com",
     },
     {
-      title: "YouTube",
-      description: "Cultos, mensagens e transmissões",
-      icon: "youtube",
-      image: "",
-      url: "https://www.youtube.com/@ADFiSorocabaOficial",
-    },
-    {
       title: "Fotos dos cultos",
       description: "Acesse os registros no Drive",
       icon: "drive",
       image: "",
       url: "https://drive.google.com/",
+    },
+    {
+      title: "WhatsApp da igreja",
+      description: "Fale com nossa equipe",
+      icon: "whatsapp",
+      image: "",
+      url: "https://wa.me/5515991037492",
+    },
+    {
+      title: "YouTube",
+      description: "Cultos, mensagens e transmissões",
+      icon: "youtube",
+      image: "",
+      url: "https://www.youtube.com/@ADFiSorocabaOficial",
     },
     {
       title: "Instagram",
@@ -55,7 +55,7 @@ const church = {
       image: "",
       url: "https://www.instagram.com/adfisorocaba/",
     },
-     {
+    {
       title: "Facebook",
       description: "Curta nossa pagina",
       icon: "facebook",
