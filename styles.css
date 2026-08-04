@@ -67,9 +67,10 @@ a {
 
 .avatar img {
   display: none;
-  width: 84%;
-  height: 84%;
+  width: 72%;
+  height: 72%;
   object-fit: contain;
+  object-position: center 42%;
 }
 
 .avatar.has-logo {
